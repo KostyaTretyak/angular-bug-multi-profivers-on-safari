@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
+import { ApiMockModule } from '@ng-stack/api-mock';
+
 import { AppComponent } from './app.component';
+import { HeroesService } from './heroes/heroes.service';
+import { AppRoutingModule } from './app-routing.module';
+
+const apiMockModule = ApiMockModule.forRoot(HeroesService, { delay: 0 });
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, apiMockModule],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

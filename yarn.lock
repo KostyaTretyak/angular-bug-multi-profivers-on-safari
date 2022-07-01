@@ -1277,6 +1277,13 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@ng-stack/api-mock@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@ng-stack/api-mock/-/api-mock-1.4.1.tgz#458fe323921480ce8e19e860c45f0a4adf9d966c"
+  integrity sha512-Xk2JTV4U++qO8ghdge/ik71Cx6n+H9XUk7IKg+/ZkryutHFgol2jXTblqw6g6qEoY5F46uk9mlbSG4djW4s8HA==
+  dependencies:
+    tslib "^2.3.0"
+
 "@ngtools/webpack@13.3.8":
   version "13.3.8"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-13.3.8.tgz#3f9ce65145b21c5a7d735a2e2a9c2e62e2917eb7"
